@@ -2,7 +2,7 @@
 kata - on java /springboot env. - output a shoppingbasket
 This is a variation of a popular kata described in http://codekata.com/kata/kata01-supermarket-pricing/. 
 The aim of the exercise is to build a solution using <b>the TDD methodologie, /relevant pattern</b> to organize the code.
- # Exerice
+ # kata
  ----------
  Please write a program to represent the following scenario:
 
@@ -30,12 +30,14 @@ The supermarket business logic is in service layer
 the vew layer is not relevant in this user story.
 
 2/
-The solution is guided by the idea of coding minimum classes, with minimum dependances.
-To achieve this goal spring-boot is used for bean injection and 
-the appropriate offer to apply on a product is  
-by using the unique method declared in a functionnal interface - [apply]
-a OfferProcessorManager class invok the method apply (from the functionnal 
-interface) via a lambda expression on different OfferProcessor classes.
+The solution is guided by the idea of minimum code in classes, with minimum dependances.
+To achieve these goals spring-boot is used for bean injection 
+The appropriate offer to apply on a product is assessed
+by using the unique method declared in a functionnal interface - [apply].
+The OfferProcessorManager class invok the method apply (from the functionnal 
+interface) via lambda expression on different OfferProcessor classes.
+Disavantage of this solution : If discount calculation becomes more complex, 
+lambda expression will not suit anymore.
 
 # enry point of the project:
 the main class SpringSuperMarketAPP
