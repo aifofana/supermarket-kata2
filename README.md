@@ -39,7 +39,7 @@ interface) via lambda expression on different OfferProcessor classes.
 Disavantage of this solution : If discount calculation becomes more complex, 
 lambda expression will not suit anymore.
 
-# enry point of the project:
+# entry point of the project:
 the main class SpringSuperMarketAPP
 
 # Possible improvements
